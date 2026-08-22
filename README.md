@@ -1,23 +1,30 @@
 # Learning Playwright
 
-A beginner-friendly repository with JavaScript examples and Playwright notes for learning and practice.
+LearningPlaywright is a beginner-friendly repository with JavaScript examples and Playwright notes for learning and practice.
 
 Latest updates (2026-08-22)
 
-- README updated to exactly reflect repository contents and current date.
-- Cleaned chapter descriptions and fixed typos.
+- README reorganized to follow the structure used in priyaayyanar/Learn_Playwright_2X.
+- Cleaned chapter descriptions and fixed typos in the README text.
 
-Repository overview
+Repository
 
 - Owner: RoshaniPagare
 - Repo: LearningPlaywright
 - Primary language: JavaScript
 
-Contents
+Structure
 
-This repository is organized into numbered chapters covering JavaScript fundamentals, identifiers, literals, variable types, and operators. Each chapter contains example files you can open and run locally.
+| Folder | Content |
+|---|---|
+| `chapter_01_Basics` | JavaScript basics and Playwright setup verification examples |
+| `chapter_02_Javascript_Concepts` | JavaScript fundamentals: identifiers, comments, naming rules |
+| `chapter_03_Identifier_Literals` | Identifiers, literals, and VS Code keyboard shortcuts (macOS & Windows) |
+| `chapter_04_TypesOfVariables` | `var`, `let`, `const`, functions, hoisting, scope examples |
+| `chapter_05_Literal` | Literals: numbers, strings, template literals, `null` vs `undefined` |
+| `chapter_06_Operators` | Arithmetic, assignment, comparison, logical, and ternary operators |
 
-Chapters
+Chapters & example files (overview)
 
 - Chapter 01: Basics
   - chapter_01_Basics/01_Basics.js
@@ -91,6 +98,7 @@ Quick setup:
 1. Clone the repo:
 
    git clone https://github.com/RoshaniPagare/LearningPlaywright.git
+
 2. Install dependencies (if any):
 
    npm install
@@ -98,6 +106,7 @@ Quick setup:
    or
 
    yarn install
+
 3. If you add Playwright tests and want to run browsers:
 
    npx playwright install
@@ -129,6 +138,10 @@ Notes
 License
 
 - This repository currently does not include a LICENSE file. Add a LICENSE if you want to specify reuse terms.
+
+Author
+
+- Roshani Pagare
 
 If you'd like, I can also:
 
