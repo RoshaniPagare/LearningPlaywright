@@ -53,3 +53,13 @@ a = 20;
 
 a = +10;   //this will overwrite the value of a with 10. So, a will become 10.
 console.log(a); // 10
+
+
+
+let temperature = 10;
+
+let feel = temperature >= 40 ? "Very Hot" :
+    (temperature >= 30) ? "Hot" :
+        (temperature >= 20) ? "Warm" :
+            (temperature >= 10) ? "cool" : "Cold";
+console.log(`Temperature : ${temperature} = Feel : ${feel}`)
