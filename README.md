@@ -1,11 +1,12 @@
 # Learning Playwright
 
-LearningPlaywright is a beginner-friendly repository with JavaScript examples and Playwright notes for learning and practice.
+LearningPlaywright is a beginner-friendly repository for learning JavaScript fundamentals and exploring Playwright concepts with practical examples.
 
-Latest updates (2026-08-22)
+Latest updates (2026-10-15)
 
-- README reorganized to follow the structure used in priyaayyanar/Learn_Playwright_2X.
-- Cleaned chapter descriptions and fixed typos in the README text.
+- Updated the repository structure to match the current folders in the project.
+- Added the `chapter_07_if_else` chapter and the `Tasks` folder to the documentation.
+- Refined the README to better reflect the actual learning path and project layout.
 
 ## Repository
 
@@ -17,12 +18,15 @@ Latest updates (2026-08-22)
 
 | Folder | Content |
 |---|---|
-| `chapter_01_Basics` | JavaScript basics and Playwright setup verification examples |
-| `chapter_02_Javascript_Concepts` | JavaScript fundamentals: identifiers, comments, naming rules |
-| `chapter_03_Identifier_Literals` | Identifiers, literals, and VS Code keyboard shortcuts (macOS & Windows) |
-| `chapter_04_TypesOfVariables` | `var`, `let`, `const`, functions, hoisting, scope examples |
-| `chapter_05_Literal` | Literals: numbers, strings, template literals, `null` vs `undefined` |
+| `Tasks` | Practice tasks and exercise-based learning files |
+| `chapter_01_Basics` | JavaScript basics and setup verification examples |
+| `chapter_02_Javascript_Concepts` | JavaScript fundamentals, syntax, and concept explanations |
+| `chapter_03_Identifier_Literals` | Identifiers, literals, and editor shortcuts |
+| `chapter_04_TypesOfVariables` | `var`, `let`, `const`, scope, hoisting, and function basics |
+| `chapter_05_Literal` | Literal types, values, and data concepts |
 | `chapter_06_Operators` | Arithmetic, assignment, comparison, logical, and ternary operators |
+| `chapter_07_if_else` | Conditional statements and decision-making examples |
+| `README.md` | Project overview and onboarding guide |
 
 ## Topics Covered
 
@@ -34,56 +38,57 @@ Latest updates (2026-08-22)
 
 ### Identifiers & Naming Conventions
 - JavaScript identifier rules and naming conventions
-- Identifier naming cases: camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, Train-Case, dot.case, Hungarian notation
-- Reserved keywords and valid identifier names
+- Identifier naming styles: camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, Train-Case, dot.case, and Hungarian notation
+- Reserved keywords and valid identifiers
 - JavaScript comments (single-line and multi-line)
-- VS Code keyboard shortcuts (Windows & Mac)
+- VS Code shortcuts for Windows and macOS
 
 ### Variables & Declaration
-- `var`, `let`, `const` differences and best practices
+- `var`, `let`, and `const` differences
 - Variable declaration and initialization
 - Global vs local scope
-- Function scope (var)
-- Block scope (let, const)
+- Function scope and block scope
 - Temporal Dead Zone (TDZ)
-- Variable hoisting: var, let, const, and functions
+- Hoisting behavior for variables and functions
 
 ### Hoisting & Scope
 - Function hoisting and function expressions
 - Variable hoisting mechanisms
-- Scope concepts: global scope, function scope, block scope
+- Global, function, and block scope
 - Nested scopes and scope chain
 - Lexical environment and closure concepts
 
 ### Literals & Data Types
-- JavaScript literals: numbers, strings, booleans, null, undefined
-- Number literals: decimals, integers, exponentials, NaN, Infinity
-- String literals: single quotes, double quotes, escape sequences
-- Template literals and string interpolation
-- Backtick (`) vs single (') vs double (") quotes
-- `null` vs `undefined` differences
-- Boolean literals: true and false
+- JavaScript literals: numbers, strings, booleans, `null`, and `undefined`
+- Number literals, exponentials, `NaN`, and `Infinity`
+- String literals and escape sequences
+- Template literals and interpolation
+- `null` vs `undefined`
+- Boolean literals: `true` and `false`
 
 ### Operators
-- Arithmetic operators: `+`, `-`, `*`, `/`, `%`, `**` (exponentiation)
-- Assignment operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `**=`
-- Compound operators and shorthand syntax
+- Arithmetic operators: `+`, `-`, `*`, `/`, `%`, `**`
+- Assignment operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
 - Comparison operators: `==`, `!=`, `===`, `!==`, `<`, `>`, `<=`, `>=`
-- Strict (`===`) vs loose (`==`) equality comparison
-- Logical operators: `&&` (AND), `||` (OR), `!` (NOT)
-- Ternary operator (conditional operator)
-- Type operator (`typeof`)
+- Logical operators: `&&`, `||`, `!`
+- Ternary operator
+- `typeof` operator
 - Increment and decrement operators: `++`, `--`
 - Operator precedence and associativity
 
+### Conditional Logic
+- `if`, `else if`, and `else` statements
+- Comparison-based branching
+- Real-world decision-making examples in JavaScript
+
 ## What You'll Find
 
-- **JavaScript fundamentals** with runnable example files
-- **Detailed explanations** of identifier rules, literals, hoisting, and scope
-- **Variable declaration techniques** with var, let, and const
-- **Operator examples** covering arithmetic, logical, and comparison operations
-- **VS Code keyboard shortcuts reference** for macOS and Windows
-- **Practice examples** for each topic with clear, beginner-friendly code
+- JavaScript fundamentals with runnable example files
+- Beginner-friendly explanations for core programming concepts
+- Variable declaration examples with `var`, `let`, and `const`
+- Operator examples covering arithmetic, logical, and comparison operations
+- Practice exercises and task files for hands-on learning
+- VS Code references and beginner notes for JavaScript development
 
 ## Getting Started / Installation
 
@@ -95,14 +100,14 @@ Latest updates (2026-08-22)
 
 ### Quick Setup
 
-1. **Clone the repository:**
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/RoshaniPagare/LearningPlaywright.git
    cd LearningPlaywright
    ```
 
-2. **Install dependencies (if any):**
+2. Install dependencies (if any):
 
    ```bash
    npm install
@@ -114,7 +119,7 @@ Latest updates (2026-08-22)
    yarn install
    ```
 
-3. **If you add Playwright tests and want to run browsers:**
+3. If you add Playwright tests and want to run browsers:
 
    ```bash
    npx playwright install
@@ -130,6 +135,12 @@ Run standalone JavaScript examples with Node.js:
 node chapter_01_Basics/01_Basics.js
 ```
 
+Example usage for other chapters:
+
+```bash
+node chapter_06_Operators/06_Operators.js
+```
+
 ### Playwright Tests
 
 ```bash
@@ -142,7 +153,7 @@ Run with UI mode:
 npx playwright test --ui
 ```
 
-Show test report:
+Show the test report:
 
 ```bash
 npx playwright show-report
@@ -150,7 +161,7 @@ npx playwright show-report
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Please open an issue first to discuss major changes.
+Contributions, issues, and feature requests are welcome. Please open an issue first to discuss major changes.
 
 ### Basic Workflow
 
@@ -160,9 +171,10 @@ Contributions, issues, and feature requests are welcome! Please open an issue fi
 
 ## Notes
 
-- This repository is intended for **learning and practice purposes**
-- All examples are beginner-friendly and include explanations
-- Code follows JavaScript best practices and conventions
+- This repository is intended for learning and practice purposes.
+- Examples are beginner-friendly and include explanations.
+- Code follows JavaScript best practices and conventions.
+- The project continues to expand with additional JavaScript topics and practical exercises.
 
 ## License
 
@@ -170,15 +182,15 @@ This repository currently does not include a LICENSE file. Add a LICENSE if you 
 
 ## Author
 
-- **Roshani Pagare**
+- Roshani Pagare
 
 ---
 
 ### Future Enhancements
 
 Consider adding:
-- Fix small typos in filenames (for example: `23_null_vs_undeifned.js` -> `23_null_vs_undefined.js`)
-- Add a LICENSE file (MIT/Apache/Other)
-- Add package.json and Playwright configuration for runnable tests
-- Expand chapters with loops, arrays, functions, and async concepts
-- Add interactive examples and test cases
+- Small fixes for filenames or inconsistencies across chapters
+- A LICENSE file (MIT/Apache/Other)
+- package.json and Playwright configuration for runnable tests
+- More chapters on arrays, loops, functions, and async JavaScript
+- Additional practice tasks and interactive examples
